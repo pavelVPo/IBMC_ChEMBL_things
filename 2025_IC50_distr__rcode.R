@@ -50,7 +50,7 @@ basic_summary_plot <- ggplot(pairs_pct, aes(x=category, y=pct)) +
   								geom_bar(stat = "identity", fill = "#515095FF") +
   								scale_y_continuous(name="Процент записей", breaks=c(0,10,20,30,40,50,60,70,80,90,100), limits=c(0,100)) +
   								scale_x_discrete(name="Количество экспериментов") +
-  								labs(title = "Данные ChEMBL v36", subtitle = str_glue("{format(sum_measurements, big.mark = '\u2009')} записей IC\u2085\u2080")) +
+  								labs(title = "Данные ChEMBL v36", subtitle = str_glue("{format(sum_measurements, big.mark = '\u2009')} записи IC\u2085\u2080")) +
   								theme_classic() +
   								theme(plot.title = element_text(hjust = .95), plot.subtitle = element_text(hjust = .95))
 basic_summary_plot
@@ -58,7 +58,7 @@ sqrt_summary_plot <- ggplot(pairs_pct, aes(x=category, y=pct)) +
   								geom_bar(stat = "identity", fill = "#515095FF") +
   								scale_y_sqrt(name="Процент записей", breaks=c(0,1,5,10,20,30,40,50,60,70,80,90,100), limits=c(0,100)) +
   								scale_x_discrete(name="Количество экспериментов") +
-  								labs(title = "Данные ChEMBL v36", subtitle = str_glue("{format(sum_measurements, big.mark = '\u2009')} записей IC\u2085\u2080")) +
+  								labs(title = "Данные ChEMBL v36", subtitle = str_glue("{format(sum_measurements, big.mark = '\u2009')} записи IC\u2085\u2080")) +
   								theme_classic() +
   								theme(plot.title = element_text(hjust = .95), plot.subtitle = element_text(hjust = .95))
 sqrt_summary_plot
